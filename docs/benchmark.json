@@ -1,0 +1,343 @@
+{
+  "plan": "E:\\GitHub Project\\Small project-1\\Small size project plan-1\\Third 8 projects\\HTTP-Load-Replayer\\examples\\workload.jsonl",
+  "levels": [
+    {
+      "base_url": "http://127.0.0.1:65003",
+      "concurrency": 1,
+      "requests": 60,
+      "wall_seconds": 1.5173,
+      "throughput_rps": 39.54,
+      "failures": 2,
+      "error_rate": 3.33,
+      "classes": {
+        "2xx": 58,
+        "4xx": 2
+      },
+      "statuses": {
+        "200": 48,
+        "201": 10,
+        "429": 2
+      },
+      "transport_errors": {},
+      "latency": {
+        "sample": 60,
+        "avg": 25.206,
+        "p50": 17.754,
+        "p90": 41.692,
+        "p95": 61.513,
+        "p99": 61.619,
+        "max": 61.808
+      },
+      "endpoints": [
+        {
+          "name": "browse catalog",
+          "requests": 26,
+          "failures": 0,
+          "p50": 13.293,
+          "p95": 13.643
+        },
+        {
+          "name": "checkout",
+          "requests": 5,
+          "failures": 0,
+          "p50": 61.575,
+          "p95": 61.808
+        },
+        {
+          "name": "create order",
+          "requests": 10,
+          "failures": 0,
+          "p50": 26.43,
+          "p95": 26.749
+        },
+        {
+          "name": "health",
+          "requests": 5,
+          "failures": 0,
+          "p50": 1.923,
+          "p95": 2.932
+        },
+        {
+          "name": "search",
+          "requests": 14,
+          "failures": 2,
+          "p50": 41.26,
+          "p95": 41.692
+        }
+      ],
+      "sla": {
+        "checks": [
+          {
+            "name": "p95 latency",
+            "limit": 150,
+            "observed": 61.513,
+            "unit": "ms",
+            "passed": true
+          },
+          {
+            "name": "error rate",
+            "limit": 10,
+            "observed": 3.33,
+            "unit": "%",
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    },
+    {
+      "base_url": "http://127.0.0.1:65003",
+      "concurrency": 2,
+      "requests": 60,
+      "wall_seconds": 0.7683,
+      "throughput_rps": 78.09,
+      "failures": 2,
+      "error_rate": 3.33,
+      "classes": {
+        "2xx": 58,
+        "4xx": 2
+      },
+      "statuses": {
+        "200": 48,
+        "201": 10,
+        "429": 2
+      },
+      "transport_errors": {},
+      "latency": {
+        "sample": 60,
+        "avg": 25.098,
+        "p50": 14.971,
+        "p90": 41.712,
+        "p95": 61.293,
+        "p99": 61.63,
+        "max": 61.726
+      },
+      "endpoints": [
+        {
+          "name": "browse catalog",
+          "requests": 26,
+          "failures": 0,
+          "p50": 13.265,
+          "p95": 13.556
+        },
+        {
+          "name": "checkout",
+          "requests": 5,
+          "failures": 0,
+          "p50": 61.564,
+          "p95": 61.726
+        },
+        {
+          "name": "create order",
+          "requests": 10,
+          "failures": 0,
+          "p50": 26.55,
+          "p95": 26.849
+        },
+        {
+          "name": "health",
+          "requests": 5,
+          "failures": 0,
+          "p50": 1.861,
+          "p95": 2.084
+        },
+        {
+          "name": "search",
+          "requests": 14,
+          "failures": 2,
+          "p50": 41.178,
+          "p95": 41.712
+        }
+      ],
+      "sla": {
+        "checks": [
+          {
+            "name": "p95 latency",
+            "limit": 150,
+            "observed": 61.293,
+            "unit": "ms",
+            "passed": true
+          },
+          {
+            "name": "error rate",
+            "limit": 10,
+            "observed": 3.33,
+            "unit": "%",
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    },
+    {
+      "base_url": "http://127.0.0.1:65003",
+      "concurrency": 4,
+      "requests": 60,
+      "wall_seconds": 0.392,
+      "throughput_rps": 153.06,
+      "failures": 3,
+      "error_rate": 5.0,
+      "classes": {
+        "2xx": 57,
+        "4xx": 2,
+        "5xx": 1
+      },
+      "statuses": {
+        "200": 47,
+        "201": 10,
+        "429": 2,
+        "500": 1
+      },
+      "transport_errors": {},
+      "latency": {
+        "sample": 60,
+        "avg": 25.14,
+        "p50": 14.652,
+        "p90": 41.824,
+        "p95": 61.451,
+        "p99": 61.67,
+        "max": 63.269
+      },
+      "endpoints": [
+        {
+          "name": "browse catalog",
+          "requests": 26,
+          "failures": 0,
+          "p50": 13.142,
+          "p95": 13.847
+        },
+        {
+          "name": "checkout",
+          "requests": 5,
+          "failures": 1,
+          "p50": 61.476,
+          "p95": 63.269
+        },
+        {
+          "name": "create order",
+          "requests": 10,
+          "failures": 0,
+          "p50": 26.252,
+          "p95": 28.253
+        },
+        {
+          "name": "health",
+          "requests": 5,
+          "failures": 0,
+          "p50": 1.89,
+          "p95": 2.216
+        },
+        {
+          "name": "search",
+          "requests": 14,
+          "failures": 2,
+          "p50": 41.153,
+          "p95": 41.824
+        }
+      ],
+      "sla": {
+        "checks": [
+          {
+            "name": "p95 latency",
+            "limit": 150,
+            "observed": 61.451,
+            "unit": "ms",
+            "passed": true
+          },
+          {
+            "name": "error rate",
+            "limit": 10,
+            "observed": 5.0,
+            "unit": "%",
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    },
+    {
+      "base_url": "http://127.0.0.1:65003",
+      "concurrency": 8,
+      "requests": 60,
+      "wall_seconds": 0.2295,
+      "throughput_rps": 261.44,
+      "failures": 2,
+      "error_rate": 3.33,
+      "classes": {
+        "2xx": 58,
+        "4xx": 2
+      },
+      "statuses": {
+        "200": 48,
+        "201": 10,
+        "429": 2
+      },
+      "transport_errors": {},
+      "latency": {
+        "sample": 60,
+        "avg": 26.329,
+        "p50": 18.13,
+        "p90": 45.577,
+        "p95": 62.246,
+        "p99": 64.168,
+        "max": 66.233
+      },
+      "endpoints": [
+        {
+          "name": "browse catalog",
+          "requests": 26,
+          "failures": 0,
+          "p50": 13.322,
+          "p95": 17.153
+        },
+        {
+          "name": "checkout",
+          "requests": 5,
+          "failures": 0,
+          "p50": 62.445,
+          "p95": 66.233
+        },
+        {
+          "name": "create order",
+          "requests": 10,
+          "failures": 0,
+          "p50": 27.036,
+          "p95": 34.554
+        },
+        {
+          "name": "health",
+          "requests": 5,
+          "failures": 0,
+          "p50": 2.161,
+          "p95": 11.124
+        },
+        {
+          "name": "search",
+          "requests": 14,
+          "failures": 2,
+          "p50": 42.098,
+          "p95": 45.577
+        }
+      ],
+      "sla": {
+        "checks": [
+          {
+            "name": "p95 latency",
+            "limit": 150,
+            "observed": 62.246,
+            "unit": "ms",
+            "passed": true
+          },
+          {
+            "name": "error rate",
+            "limit": 10,
+            "observed": 3.33,
+            "unit": "%",
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    }
+  ]
+}

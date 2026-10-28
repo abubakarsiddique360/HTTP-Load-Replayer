@@ -1,0 +1,5 @@
+{"name": "browse catalog", "method": "GET", "path": "/api/catalog", "weight": 6}
+{"name": "search", "method": "GET", "path": "/api/search?q=drill", "weight": 3}
+{"name": "create order", "method": "POST", "path": "/api/orders", "body": {"sku": "SKU-1042", "qty": 1}, "weight": 2}
+{"name": "checkout", "method": "POST", "path": "/api/checkout", "body": {"cart": "c-77"}, "weight": 1}
+{"name": "health", "method": "GET", "path": "/healthz", "weight": 1}
